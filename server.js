@@ -17,7 +17,7 @@ const routes = require("./routes/router.js");
 app.use(bodyparser.json());
 
 app.use("/api", routes);
-app.get("/", (res) => {
+app.get("/", function (req, res) {
   res.send("hello");
 });
 
