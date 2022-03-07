@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const nodemailer = require("nodemailer");
 
-module.exports.home = (req, res) => {
+module.exports.home = function (req, res) {
   res.send("api working");
 };
 

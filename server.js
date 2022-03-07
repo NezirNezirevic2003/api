@@ -18,7 +18,7 @@ app.use(bodyparser.json());
 
 app.use("/api", routes);
 app.get("/", function (req, res) {
-  console.log("hello world");
+  res.send("Hello");
 });
 
 app.listen(process.env.PORT || 5000, (err) => {
