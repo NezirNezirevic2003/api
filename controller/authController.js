@@ -92,16 +92,10 @@ module.exports.login = (req, res) => {
           message: "Login succesfull",
         });
       } else {
-        res.send({
-          status: false,
-          message: "Invalid username or password",
-        });
+        res.status(401).json({ err: "Unauthorized" });
       }
     } else {
-      res.send({
-        status: false,
-        message: "invalid username",
-      });
+      res.status(401).json({ err: "Unauthorized" });
     }
   });
 };
