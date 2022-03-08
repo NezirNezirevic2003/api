@@ -23,5 +23,5 @@ app.get("/", function (req, res) {
 
 app.listen(process.env.PORT || 5000, (err) => {
   if (err) throw err;
-  console.log("server running");
+  console.log(`server running on http://localhost:5000`);
 });
