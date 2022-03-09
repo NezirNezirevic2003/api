@@ -21,13 +21,13 @@
     "jsonwebtoken": "^8.5.1",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
-    "nodemailer": "^6.7.2"
+    "nodemailer": "^6.7.2",
+    "dotenv": "^16.0.0"
   },
   "engine": {
     "node": "16.13.1."
   },
   "devDependencies": {
-    "dotenv": "^16.0.0",
     "eslint": "^8.10.0",
     "nodemon": "^2.0.15"
   }
