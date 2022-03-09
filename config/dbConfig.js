@@ -1,17 +1,11 @@
-require("dotenv").config({ path: __dirname + "/.env" });
 const mysql = require("mysql2");
-const HOST = process.env.HOST;
-const USER = process.env.USER;
-const PASSWORD = process.env.PASSWORD;
-const DATABASE = process.env.DATABASE;
-const PORT = process.env.PORT;
 
 const dbconnection = mysql.createConnection({
-  host: HOST,
-  user: USER,
-  password: PASSWORD,
-  database: DATABASE,
-  port: PORT,
+  host: "sql11.freesqldatabase.com",
+  user: "sql11477389",
+  password: "HdxbUpIT2n",
+  database: "sql11477389",
+  port: 3306,
 });
 
 module.exports = dbconnection;
