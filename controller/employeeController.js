@@ -7,10 +7,7 @@ module.exports.employees = (req, res) => {
     if (err) throw err;
 
     if (result.length > 0) {
-      res.send({
-        message: "User",
-        data: result,
-      });
+      res.send(result);
     }
   });
 };
